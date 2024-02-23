@@ -1,11 +1,11 @@
+import Landing from "./pages/Landing";
+
 function App() {
   return (
-    <>
-      <div>
-        <h1 className='text-3xl font-bold underline'>Hello world!</h1>
-      </div>
-    </>
-  )
+    <div>
+      <Landing />
+    </div>
+  );
 }
 
-export default App
+export default App;
