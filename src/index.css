@@ -39,6 +39,29 @@ body,
 
 @layer components {
   .btn {
-    @apply text-white inline-block cursor-pointer rounded-md bg-primary-500 px-4 py-1.5 capitalize tracking-wider transition hover:bg-primary-700 hover:shadow-md;
+    @apply text-white mt-8 inline-block cursor-pointer rounded-md bg-primary-500 px-4 py-1.5 capitalize tracking-wider transition hover:bg-primary-700 hover:shadow-md;
+  }
+  .btn-block {
+    @apply w-full;
+  }
+  .form {
+    @apply bg-white mx-auto my-12 w-[90vw] max-w-[500px] rounded-lg border-t-4 border-primary-500 px-10 py-8 shadow-lg hover:shadow-xl;
+  }
+  .form-row {
+    @apply mb-4;
+  }
+  .form-label {
+    @apply mb-2 block text-sm capitalize tracking-wide;
+  }
+  .form-input,
+  .form-textarea,
+  .form-select {
+    @apply w-full rounded-md border border-solid border-grey-200 bg-grey-50 px-3 py-1.5;
+  }
+
+  .form-input,
+  .form-select,
+  .btn-block {
+    @apply h-9;
   }
 }
